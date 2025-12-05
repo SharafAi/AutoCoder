@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "AutoCoder",
+  "version": "1.0",
+  "description": "Professional container automation tool.",
+  "permissions": [
+    "clipboardWrite",
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_title": "AutoCoder"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "config.json"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}

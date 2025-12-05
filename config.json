@@ -1,0 +1,39 @@
+{
+  "containerInput": [
+    "#input_49",
+    "[placeholder=\"Container\\ No\"]",
+    "[aria-label=\"Container\\ No\"]",
+    "input[type=\"text\"][placeholder=\"Container\\ No\"]",
+    ".aft-element-highlight",
+    ".md-input.aft-element-highlight",
+    "div.md-padding > div.md-whiteframe-z1 > form.layout-padding > div.flex > md-input-container.md-block > input#input_49"
+  ],
+  "search": [
+    ".layout-padding button:contains(\"search\")",
+    ".layout-align-gt-md-start-center button:contains(\"search\")",
+    ".layout-row button:contains(\"search\")",
+    ".flex button:contains(\"search\")",
+    ".aft-element-highlight",
+    "div.layout-column > div.layout-fill > div.md-padding > div.md-whiteframe-z1 > form.layout-padding > button.md-icon-button"
+  ],
+  "addButton": [
+    "button:not([class*=\"aft-\"]):not([id*=\"aft_\"]):not([data-aft-ignore]):contains(\"Add Code\")",
+    ".aft-element-highlight",
+    "md-content.md-whiteframe-z1 > table.pure-table > tbody > tr.rowhighlight > td:nth-of-type(12) > button.md-button"
+  ],
+  "codeInput": [
+    "#input_95",
+    ".aft-element-highlight",
+    ".md-input.aft-element-highlight",
+    "md-dialog#dialogContent_96 > md-content._md > div > div.layout-sm-column > md-input-container.no-margin-bottom > input#input_95"
+  ],
+  "confirm": [
+    ".layout-sm-column button:contains(\"Save\")",
+    ".layout-row button:contains(\"Save\")",
+    ".aft-element-highlight",
+    ".md-primary.md-raised.md-button",
+    "div.md-dialog-container > md-dialog#dialogContent_96 > md-content._md > div > div.layout-sm-column > button.md-primary"
+  ],
+  "globalCode": "C1",
+  "savedAt": "2025-12-02T09:21:42.041Z"
+}
