@@ -476,6 +476,12 @@
     .aft-export-modal.show { display: flex; }
     .aft-export-textarea { flex: 1; background: #252526; border: 1px solid #333; color: #ccc; padding: 8px; font-family: 'Consolas', 'Monaco', monospace; font-size: 11px; resize: none; outline: none; border-radius: 4px; }
     .aft-export-info { font-size: 11px; color: #858585; line-height: 1.4; }
+
+    /* Ad Container */
+    .aft-ad-container { border-top: 1px solid #333; background: #1a1a1b; padding: 8px; display: flex; flex-direction: column; align-items: center; gap: 4px; flex-shrink: 0; }
+    .aft-ad-label { font-size: 9px; color: #555; text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px; align-self: flex-start; margin-left: 4px; }
+    .aft-ad-iframe { border: none; overflow: hidden; background: transparent; width: 100%; height: 60px; }
+
   `;
   document.head.appendChild(style);
 
@@ -598,6 +604,13 @@
             <button id="aft_clear_selectors" class="aft-btn aft-btn-danger">Reset All</button>
         </div>
       </div>
+
+      <!-- Ad Section (Policy Compliant) -->
+      <div class="aft-ad-container">
+        <div class="aft-ad-label">Sponsored</div>
+        <iframe class="aft-ad-iframe" src="https://ad.a-ads.com/2418512?size=320x50" scrolling="no" allowtransparency="true"></iframe>
+      </div>
+
 
        
        <!-- Donation View (Overlay) -->

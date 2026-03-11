@@ -11,8 +11,13 @@
   "permissions": [
     "clipboardWrite",
     "activeTab",
-    "scripting"
+    "scripting",
+    "storage"
   ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'",
+    "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ad.a-ads.com; child-src https://ad.a-ads.com"
+  },
   "action": {
     "default_title": "AutoCoder",
     "default_icon": {
