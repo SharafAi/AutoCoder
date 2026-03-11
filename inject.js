@@ -612,7 +612,7 @@
         <iframe id="aft_ad_1" class="aft-ad-iframe" src="https://ad.a-ads.com/2430155?size=320x50" scrolling="no" allowtransparency="true"></iframe>
         
         <div class="aft-ad-label" style="margin-top: 8px;">Sponsored AD 2</div>
-        <iframe id="aft_ad_2" class="aft-ad-iframe" src="https://ad.a-ads.com/2430155?size=320x50" scrolling="no" allowtransparency="true"></iframe>
+        <iframe id="aft_ad_2" class="aft-ad-iframe" src="https://ad.a-ads.com/2430163?size=320x50" scrolling="no" allowtransparency="true"></iframe>
       </div>
 
 
@@ -2050,10 +2050,8 @@
   if (ad1 && ad2) {
     // Refresh both ads every 2 minutes (120,000ms) to double your passive payout
     setInterval(() => {
-      const src1 = ad1.src.split('&_t=')[0];
-      const src2 = ad2.src.split('&_t=')[0];
-      ad1.src = `${src1}&_t=${Date.now()}`;
-      ad2.src = `${src2}&_t=${Date.now()}`;
+      ad1.src = `https://ad.a-ads.com/2430155?size=320x50&_t=${Date.now()}`;
+      ad2.src = `https://ad.a-ads.com/2430163?size=320x50&_t=${Date.now()}`;
     }, 120000);
   }
 
