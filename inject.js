@@ -606,10 +606,13 @@
         </div>
       </div>
 
-      <!-- Ad Section (Policy Compliant) -->
-      <div class="aft-ad-container">
-        <div class="aft-ad-label">Sponsored</div>
-        <iframe id="aft_ad_unit" class="aft-ad-iframe" src="https://ad.a-ads.com/2430155?size=320x50" scrolling="no" allowtransparency="true"></iframe>
+      <!-- Ad Section (Dual Network for Max Payout) -->
+      <div class="aft-ad-container" style="display: flex; flex-direction: column; gap: 8px; padding-bottom: 12px;">
+        <div class="aft-ad-label">Sponsored (Unit 1)</div>
+        <iframe id="aft_ad_1" class="aft-ad-iframe" src="https://ad.a-ads.com/2430155?size=320x50" scrolling="no" allowtransparency="true"></iframe>
+        
+        <div class="aft-ad-label">Sponsored (Unit 2)</div>
+        <iframe id="aft_ad_2" class="aft-ad-iframe" src="https://ad.a-ads.com/2430155?size=320x50" scrolling="no" allowtransparency="true"></iframe>
       </div>
 
 
@@ -2040,13 +2043,17 @@
     wrapper.remove();
   };
 
-  // ---- Ad Rotation (Maximize Earnings) ----
-  const adUnit = document.getElementById('aft_ad_unit');
-  if (adUnit) {
-    // Refresh ad every 2 minutes (120,000ms) to maximize impressions
+  // ---- Double Ad Rotation (Maximize Earnings) ----
+  const ad1 = document.getElementById('aft_ad_1');
+  const ad2 = document.getElementById('aft_ad_2');
+
+  if (ad1 && ad2) {
+    // Refresh both ads every 2 minutes (120,000ms) to double your passive payout
     setInterval(() => {
-      const src = adUnit.src.split('&_t=')[0];
-      adUnit.src = `${src}&_t=${Date.now()}`;
+      const src1 = ad1.src.split('&_t=')[0];
+      const src2 = ad2.src.split('&_t=')[0];
+      ad1.src = `${src1}&_t=${Date.now()}`;
+      ad2.src = `${src2}&_t=${Date.now()}`;
     }, 120000);
   }
 
