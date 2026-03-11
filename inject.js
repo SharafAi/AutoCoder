@@ -609,7 +609,7 @@
       <!-- Ad Section (Policy Compliant) -->
       <div class="aft-ad-container">
         <div class="aft-ad-label">Sponsored</div>
-        <iframe class="aft-ad-iframe" src="https://ad.a-ads.com/2418512?size=320x50" scrolling="no" allowtransparency="true"></iframe>
+        <iframe class="aft-ad-iframe" src="https://ad.a-ads.com/2430155?size=320x50" scrolling="no" allowtransparency="true"></iframe>
       </div>
 
 
