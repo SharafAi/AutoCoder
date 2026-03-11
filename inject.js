@@ -606,11 +606,10 @@
         </div>
       </div>
 
-      <!-- Ad Section (Dual Network for Max Payout) -->
+      <!-- Ad Section (Policy Compliant) -->
       <div class="aft-ad-container">
         <div class="aft-ad-label">Sponsored</div>
-        <iframe id="aft_ad_aads" class="aft-ad-iframe" src="https://ad.a-ads.com/2430155?size=320x50" scrolling="no" allowtransparency="true"></iframe>
-        <iframe id="aft_ad_coinzilla" class="aft-ad-iframe" src="https://xayro.online/coinzilla.html" scrolling="no" allowtransparency="true"></iframe>
+        <iframe id="aft_ad_unit" class="aft-ad-iframe" src="https://ad.a-ads.com/2430155?size=320x50" scrolling="no" allowtransparency="true"></iframe>
       </div>
 
 
@@ -2041,15 +2040,13 @@
     wrapper.remove();
   };
 
-  // ---- Ad Refresh (Dual Network Optimization) ----
-  const aadsUnit = document.getElementById('aft_ad_aads');
-  const coinzillaUnit = document.getElementById('aft_ad_coinzilla');
-
-  if (aadsUnit && coinzillaUnit) {
-    // Refresh both units every 2 minutes to keep ads fresh
+  // ---- Ad Rotation (Maximize Earnings) ----
+  const adUnit = document.getElementById('aft_ad_unit');
+  if (adUnit) {
+    // Refresh ad every 2 minutes (120,000ms) to maximize impressions
     setInterval(() => {
-      aadsUnit.src = `https://ad.a-ads.com/2430155?size=320x50&_t=${Date.now()}`;
-      coinzillaUnit.src = `https://xayro.online/coinzilla.html?_t=${Date.now()}`;
+      const src = adUnit.src.split('&_t=')[0];
+      adUnit.src = `${src}&_t=${Date.now()}`;
     }, 120000);
   }
 

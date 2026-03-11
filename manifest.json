@@ -16,7 +16,7 @@
   ],
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self'",
-    "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ad.a-ads.com https://coinzilla.com https://xayro.online; child-src https://ad.a-ads.com https://sharafai.github.io https://xayro.online"
+    "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ad.a-ads.com; child-src https://ad.a-ads.com https://sharafai.github.io"
   },
   "action": {
     "default_title": "AutoCoder",
