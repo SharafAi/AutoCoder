@@ -378,7 +378,7 @@
   // ---- Styles ----
   const style = document.createElement('style');
   style.textContent = `
-    #autoCopyWrapper { position: fixed; bottom: 24px; right: 24px; width: 380px; background: #1e1e1e; color: #e0e0e0; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; -webkit-font-smoothing: antialiased; border-radius: 12px; padding: 0; z-index: 2147483647; box-shadow: 0 12px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.1); box-sizing: border-box; overflow: hidden; display: flex; flex-direction: column; font-size: 13px; line-height: 1.5; }
+    #autoCopyWrapper { position: fixed; bottom: 24px; right: 40px; width: 380px; background: #1e1e1e; color: #e0e0e0; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; -webkit-font-smoothing: antialiased; border-radius: 12px; padding: 0; z-index: 2147483647; box-shadow: 0 12px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.1); box-sizing: border-box; overflow: hidden; display: flex; flex-direction: column; font-size: 13px; line-height: 1.5; }
     #autoCopyWrapper * { box-sizing: border-box; }
     
     /* Header */
@@ -478,9 +478,10 @@
     .aft-export-info { font-size: 11px; color: #858585; line-height: 1.4; }
 
     /* Ad Container */
-    .aft-ad-container { border-top: 1px solid #333; background: #1a1a1b; padding: 8px; display: flex; flex-direction: column; align-items: center; gap: 4px; flex-shrink: 0; }
-    .aft-ad-label { font-size: 9px; color: #555; text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px; align-self: flex-start; margin-left: 4px; }
-    .aft-ad-iframe { border: none; overflow: hidden; background: transparent; width: 100%; height: 60px; }
+    .aft-ad-container { border-top: 1px solid #333; background: #1a1a1b; padding: 12px 16px; display: flex; flex-direction: column; align-items: center; gap: 4px; flex-shrink: 0; }
+    .aft-ad-label { font-size: 9px; color: #555; text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px; align-self: flex-start; margin-left: 0; }
+    .aft-ad-iframe { border: none; overflow: hidden; background: transparent; width: 100%; height: 50px; max-width: 320px; }
+
 
   `;
   document.head.appendChild(style);
