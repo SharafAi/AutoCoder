@@ -1,3 +1,11 @@
+/**
+ * AutoCoder Injection Script
+ * Purpose: Automates data entry for container logistics portals.
+ * Security: This script runs in the 'MAIN' world to successfully interact with 
+ * complex web frameworks (Angular/React) used in logistics portals.
+ * Compliance: Zero use of eval() or remote code execution. 
+ * Ads are sandboxed in isolated iframes.
+ */
 (function () {
   if (document.getElementById('autoCopyWrapper')) return;
 
@@ -2046,7 +2054,7 @@
   const ad2 = document.getElementById('aft_ad_2');
 
   if (ad1 && ad2) {
-    // Refresh both ads every 2 minutes (120,000ms) to double your passive payout
+    // Refresh both ads every 2 minutes (120,000ms) to double  passive payout
     setInterval(() => {
       ad1.src = `https://ad.a-ads.com/2430155?size=320x50&_t=${Date.now()}`;
       ad2.src = `https://ad.a-ads.com/2430163?size=320x50&_t=${Date.now()}`;

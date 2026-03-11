@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "AutoCoder",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Professional container automation tool.",
   "icons": {
     "16": "icon16.png",
@@ -9,14 +9,12 @@
     "128": "icon128.png"
   },
   "permissions": [
-    "clipboardWrite",
     "activeTab",
     "scripting",
     "storage"
   ],
   "content_security_policy": {
-    "extension_pages": "script-src 'self'; object-src 'self'",
-    "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ad.a-ads.com; child-src https://ad.a-ads.com https://sharafai.github.io"
+    "extension_pages": "script-src 'self'; object-src 'self'"
   },
   "action": {
     "default_title": "AutoCoder",
