@@ -478,8 +478,8 @@
     .aft-export-info { font-size: 11px; color: #858585; line-height: 1.4; }
 
     /* Ad Container */
-    .aft-ad-container { border-top: 1px solid #333; background: #1a1a1b; padding: 12px 16px; display: flex; flex-direction: column; align-items: center; gap: 12px; flex-shrink: 0; min-height: 150px; }
-    .aft-ad-label { font-size: 9px; color: #555; text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px; align-self: flex-start; margin-left: 0; }
+    .aft-ad-container { border-top: 1px solid #333; background: #1a1a1b; padding: 8px 16px; display: flex; flex-direction: column; align-items: center; gap: 6px; flex-shrink: 0; }
+    .aft-ad-label { font-size: 8px; color: #444; text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px; align-self: flex-start; margin-bottom: 2px; }
     .aft-ad-iframe { border: none; overflow: hidden; background: transparent; width: 100%; height: 50px; max-width: 320px; }
 
 
@@ -608,10 +608,8 @@
 
       <!-- Ad Section (Dual Network for Max Payout) -->
       <div class="aft-ad-container">
-        <div class="aft-ad-label">Sponsored AD 1</div>
+        <div class="aft-ad-label">Sponsored (Unit 1 & 2)</div>
         <iframe id="aft_ad_1" class="aft-ad-iframe" src="https://ad.a-ads.com/2430155?size=320x50" scrolling="no" allowtransparency="true"></iframe>
-        
-        <div class="aft-ad-label" style="margin-top: 8px;">Sponsored AD 2</div>
         <iframe id="aft_ad_2" class="aft-ad-iframe" src="https://ad.a-ads.com/2430163?size=320x50" scrolling="no" allowtransparency="true"></iframe>
       </div>
 
