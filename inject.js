@@ -610,7 +610,7 @@
       <div class="aft-ad-container">
         <div class="aft-ad-label">Sponsored</div>
         <iframe id="aft_ad_aads" class="aft-ad-iframe" src="https://ad.a-ads.com/2430155?size=320x50" scrolling="no" allowtransparency="true"></iframe>
-        <iframe id="aft_ad_coinzilla" class="aft-ad-iframe" src="https://sharafai.github.io/AutoCoder/coinzilla.html" scrolling="no" allowtransparency="true"></iframe>
+        <iframe id="aft_ad_coinzilla" class="aft-ad-iframe" src="https://xayro.online/coinzilla.html" scrolling="no" allowtransparency="true"></iframe>
       </div>
 
 
@@ -2049,7 +2049,7 @@
     // Refresh both units every 2 minutes to keep ads fresh
     setInterval(() => {
       aadsUnit.src = `https://ad.a-ads.com/2430155?size=320x50&_t=${Date.now()}`;
-      coinzillaUnit.src = `https://sharafai.github.io/AutoCoder/coinzilla.html?_t=${Date.now()}`;
+      coinzillaUnit.src = `https://xayro.online/coinzilla.html?_t=${Date.now()}`;
     }, 120000);
   }
 
