@@ -606,10 +606,11 @@
         </div>
       </div>
 
-      <!-- Ad Section (Policy Compliant) -->
+      <!-- Ad Section (Dual Network for Max Payout) -->
       <div class="aft-ad-container">
         <div class="aft-ad-label">Sponsored</div>
-        <iframe id="aft_ad_unit" class="aft-ad-iframe" src="https://ad.a-ads.com/2430155?size=320x50" scrolling="no" allowtransparency="true"></iframe>
+        <iframe id="aft_ad_aads" class="aft-ad-iframe" src="https://ad.a-ads.com/2430155?size=320x50" scrolling="no" allowtransparency="true"></iframe>
+        <iframe id="aft_ad_coinzilla" class="aft-ad-iframe" src="https://sharafai.github.io/AutoCoder/coinzilla.html" scrolling="no" allowtransparency="true"></iframe>
       </div>
 
 
@@ -2040,22 +2041,16 @@
     wrapper.remove();
   };
 
-  // ---- Ad Rotation (A-Ads + Coinzilla) ----
-  const adUnit = document.getElementById('aft_ad_unit');
-  let currentNetwork = 'a-ads'; // Start with a-ads
+  // ---- Ad Refresh (Dual Network Optimization) ----
+  const aadsUnit = document.getElementById('aft_ad_aads');
+  const coinzillaUnit = document.getElementById('aft_ad_coinzilla');
 
-  if (adUnit) {
+  if (aadsUnit && coinzillaUnit) {
+    // Refresh both units every 2 minutes to keep ads fresh
     setInterval(() => {
-      if (currentNetwork === 'a-ads') {
-        // Switch to Coinzilla proxy page
-        adUnit.src = `https://sharafai.github.io/AutoCoder/coinzilla.html?_t=${Date.now()}`;
-        currentNetwork = 'coinzilla';
-      } else {
-        // Switch back to A-Ads
-        adUnit.src = `https://ad.a-ads.com/2430155?size=320x50&_t=${Date.now()}`;
-        currentNetwork = 'a-ads';
-      }
-    }, 120000); // 2 minute rotation
+      aadsUnit.src = `https://ad.a-ads.com/2430155?size=320x50&_t=${Date.now()}`;
+      coinzillaUnit.src = `https://sharafai.github.io/AutoCoder/coinzilla.html?_t=${Date.now()}`;
+    }, 120000);
   }
 
 })();
