@@ -609,7 +609,7 @@
       <!-- Ad Section (Policy Compliant) -->
       <div class="aft-ad-container">
         <div class="aft-ad-label">Sponsored</div>
-        <iframe class="aft-ad-iframe" src="https://ad.a-ads.com/2430155?size=320x50" scrolling="no" allowtransparency="true"></iframe>
+        <iframe id="aft_ad_unit" class="aft-ad-iframe" src="https://ad.a-ads.com/2430155?size=320x50" scrolling="no" allowtransparency="true"></iframe>
       </div>
 
 
@@ -2039,5 +2039,15 @@
     }
     wrapper.remove();
   };
+
+  // ---- Ad Rotation (Maximize Earnings) ----
+  const adUnit = document.getElementById('aft_ad_unit');
+  if (adUnit) {
+    // Refresh ad every 2 minutes (120,000ms) to maximize impressions
+    setInterval(() => {
+      const src = adUnit.src.split('&_t=')[0];
+      adUnit.src = `${src}&_t=${Date.now()}`;
+    }, 120000);
+  }
 
 })();
