@@ -478,7 +478,7 @@
     .aft-export-info { font-size: 11px; color: #858585; line-height: 1.4; }
 
     /* Ad Container */
-    .aft-ad-container { border-top: 1px solid #333; background: #1a1a1b; padding: 12px 16px; display: flex; flex-direction: column; align-items: center; gap: 4px; flex-shrink: 0; }
+    .aft-ad-container { border-top: 1px solid #333; background: #1a1a1b; padding: 12px 16px; display: flex; flex-direction: column; align-items: center; gap: 12px; flex-shrink: 0; min-height: 150px; }
     .aft-ad-label { font-size: 9px; color: #555; text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px; align-self: flex-start; margin-left: 0; }
     .aft-ad-iframe { border: none; overflow: hidden; background: transparent; width: 100%; height: 50px; max-width: 320px; }
 
