@@ -1,41 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoCoder - Extension Verification</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f9;
-        }
-        .container {
-            text-align: center;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 { color: #333; }
-        p { color: #666; }
-        .ad-slot { margin-top: 20px; border: 1px dashed #ccc; padding: 10px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoCoder - Productivity Reimagined</title>
+  <style>
+    :root {
+      --bg-color: #0f0f10;
+      --panel-bg: #1e1e1e;
+      --accent-color: #007aff;
+      --text-main: #e0e0e0;
+      --text-dim: #858585;
+      --border: rgba(255, 255, 255, 0.1);
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      text-align: center;
+      max-width: 600px;
+      margin-bottom: 40px;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin: 0 0 10px 0;
+      background: linear-gradient(135deg, #fff 0%, #888 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: var(--text-dim);
+      line-height: 1.6;
+    }
+
+    /* Mockup of the Extension Panel */
+    .mockup-panel {
+      width: 380px;
+      background: var(--panel-bg);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .header {
+      padding: 16px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-title {
+      font-weight: 700;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      background: #4caf50;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #4caf50;
+    }
+
+    .content {
+      padding: 24px;
+      text-align: center;
+    }
+
+    .btn {
+      background: var(--accent-color);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer;
+      margin-bottom: 16px;
+      width: 100%;
+    }
+
+    .ad-container {
+      background: #151516;
+      padding: 12px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .ad-label {
+      font-size: 9px;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      font-weight: 700;
+      align-self: flex-start;
+      letter-spacing: 0.5px;
+    }
+
+    .footer-info {
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-top: 40px;
+    }
+
+    /* Subtle Background Animation */
+    .bg-glow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(0, 122, 255, 0.05) 0%, rgba(0, 0, 0, 0) 70%);
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>AutoCoder Extension</h1>
-        <p>This page is for A-Ads verification of the AutoCoder Chrome Extension ad unit.</p>
-        
-        <div class="ad-slot">
-            <!-- A-Ads Ad Unit 2430155 -->
-            <iframe data-aa='2430155' src='//acceptable.a-ads.com/2430155/?size=320x50' style='border:0; padding:0; width:320px; height:50px; overflow:hidden; display:block; margin:auto;'></iframe>
-        </div>
+  <div class="bg-glow"></div>
+
+  <div class="hero">
+    <h1>AutoCoder</h1>
+    <p>Intelligent container automation directly in your browser. Streamline your workflow with precision and speed.</p>
+  </div>
+
+  <!-- This mimics the actual extension UI -->
+  <div class="mockup-panel">
+    <div class="header">
+      <div class="header-title">
+        <div class="status-dot"></div>
+        AutoCoder Engine
+      </div>
     </div>
+
+    <div class="content">
+      <p style="font-size: 13px; margin-bottom: 20px;">Verification Portal Active</p>
+      <button class="btn">Start Automation</button>
+      <div style="font-size: 11px; color: #555;">Ready for container processing</div>
+    </div>
+
+    <div class="ad-container">
+      <div class="ad-label">Sponsored</div>
+      <!-- REAL Ad Unit for Verification -->
+      <iframe id="verification-ad" data-aa='2430155' src='https://ad.a-ads.com/2430155?size=320x50' scrolling="no"
+        style='border:0; padding:0; width:320px; height:50px; overflow:hidden; display:block; background: transparent;'></iframe>
+    </div>
+  </div>
+
+  <div class="footer-info">
+    Verified Project • Open Source • Encrypted Local Storage
+  </div>
 </body>
+
 </html>
