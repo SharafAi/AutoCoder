@@ -607,11 +607,11 @@
       </div>
 
       <!-- Ad Section (Dual Network for Max Payout) -->
-      <div class="aft-ad-container" style="display: flex; flex-direction: column; gap: 8px; padding-bottom: 12px;">
-        <div class="aft-ad-label">Sponsored (Unit 1)</div>
+      <div class="aft-ad-container">
+        <div class="aft-ad-label">Sponsored AD 1</div>
         <iframe id="aft_ad_1" class="aft-ad-iframe" src="https://ad.a-ads.com/2430155?size=320x50" scrolling="no" allowtransparency="true"></iframe>
         
-        <div class="aft-ad-label">Sponsored (Unit 2)</div>
+        <div class="aft-ad-label" style="margin-top: 8px;">Sponsored AD 2</div>
         <iframe id="aft_ad_2" class="aft-ad-iframe" src="https://ad.a-ads.com/2430155?size=320x50" scrolling="no" allowtransparency="true"></iframe>
       </div>
 
