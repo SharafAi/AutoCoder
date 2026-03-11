@@ -68,7 +68,7 @@ AutoCoder is designed to save you hours of manual work. What used to take hours 
 
 🛡️ Privacy & Monetization:
 
-- **Advertisements**: AutoCoder is supported by non-intrusive advertisements (A-Ads) displayed within the extension panel. No user data is shared with advertisers.
+- **Advertisements**: AutoCoder is supported by non-intrusive advertisements (A-Ads) displayed within the extension panel. This monetization model allows for **cryptocurrency payouts** while serving general advertisements. No user data is shared with advertisers.
 - All data processing happens locally in your browser
 - No external servers or data collection
 - Your configurations stay private and secure
