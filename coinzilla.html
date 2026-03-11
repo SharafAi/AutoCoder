@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coinzilla Ad Proxy</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 
+      COINZILLA AD UNIT PLACEHOLDER 
+      Replace the scripts below with your actual Coinzilla ad code.
+    -->
+  <div id="coinzilla-ad-placeholder">
+    <!-- Replace this with your zone code from Coinzilla -->
+    <script>
+      window.coinzilla_display = window.coinzilla_display || [];
+      var c_display_preferences = {};
+      c_display_preferences.zone = "YOUR_ZONE_ID_HERE";
+      c_display_preferences.width = "320";
+      c_display_preferences.height = "50";
+      c_display_preferences.type = "banner";
+      coinzilla_display.push(c_display_preferences);
+    </script>
+    <script src="https://coinzilla.com/api/display/embed.js"></script>
+  </div>
+</body>
+
+</html>

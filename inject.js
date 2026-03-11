@@ -2040,14 +2040,22 @@
     wrapper.remove();
   };
 
-  // ---- Ad Rotation (Maximize Earnings) ----
+  // ---- Ad Rotation (A-Ads + Coinzilla) ----
   const adUnit = document.getElementById('aft_ad_unit');
+  let currentNetwork = 'a-ads'; // Start with a-ads
+
   if (adUnit) {
-    // Refresh ad every 2 minutes (120,000ms) to maximize impressions
     setInterval(() => {
-      const src = adUnit.src.split('&_t=')[0];
-      adUnit.src = `${src}&_t=${Date.now()}`;
-    }, 120000);
+      if (currentNetwork === 'a-ads') {
+        // Switch to Coinzilla proxy page
+        adUnit.src = `https://sharafai.github.io/AutoCoder/coinzilla.html?_t=${Date.now()}`;
+        currentNetwork = 'coinzilla';
+      } else {
+        // Switch back to A-Ads
+        adUnit.src = `https://ad.a-ads.com/2430155?size=320x50&_t=${Date.now()}`;
+        currentNetwork = 'a-ads';
+      }
+    }, 120000); // 2 minute rotation
   }
 
 })();
